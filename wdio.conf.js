@@ -133,16 +133,36 @@ exports.config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: ['spec',
+    ["html-nice", {
+            outputDir: './reports/html-reports/',
+            filename: 'report.html',
+            reportTitle: 'Test Report Title',
+            linkScreenshots: true,
+            //to show the report in a browser when done
+            showInBrowser: true,
+            collapseTests: false,
+            //to turn on screenshots after every test
+            useOnAfterCommandForScreenshot: false,
+
+            //to initialize the logger
+            // LOG: log4j.getLogger("default")
+        }
+        ]
+    ],
 
 
     
     //
-    // Options to be passed to Mocha.
-    // See the full list at http://mochajs.org/
-    mochaOpts: {
-        ui: 'bdd',
-        timeout: 60000
+    // Options to be passed to Jasmine.
+    jasmineOpts: {
+        defaultTimeoutInterval: 60000,
+        // The Jasmine framework allows interception of each assertion in order to log the state of the application
+        // or website depending on the result. For example, it is pretty handy to take a screenshot every time
+        // an assertion fails.
+        expectationResultHandler: function(passed, assertion) {
+            // do something
+        }
     },
     //
     // =====

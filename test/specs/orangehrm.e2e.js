@@ -63,7 +63,7 @@ describe('My Login application', () => {
         await MainPageAdminTabAddUser.submitAddUserForm();        
         await MainPageAdminTab.waitAddFormClosed();
         // Check form is succesfully closed
-        // expect(await MainPageAdminTab.activeAddForm.isExisting()).toBeFalsy();
+        expect(await MainPageAdminTab.activeAddForm.isExisting()).toBeFalsy();
     });
  
     let foundUserRow;

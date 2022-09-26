@@ -16,9 +16,11 @@
     "@wdio/mocha-framework": "^7.24.0",
     "@wdio/spec-reporter": "^7.24.0",
     "chromedriver": "^105.0.1",
-    "wdio-chromedriver-service": "^7.3.2"
+    "wdio-chromedriver-service": "^7.3.2",
+    "@wdio/types": "^7.8.0"
   },
   "dependencies": {
-    "dotenv": "^16.0.2"
+    "dotenv": "^16.0.2",
+    "wdio-html-nice-reporter": "^8.0.4"
   }
 }

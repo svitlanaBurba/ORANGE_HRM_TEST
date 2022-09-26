@@ -52,7 +52,7 @@ class MainPageAdminTab extends Page {
 
 
     async waitAddFormClosed() {
-        await this.activeAddForm.waitForDisplayed({ timeout: 10000, reverse: true });
+        await this.activeAddForm.waitForDisplayed({ timeout: 15000, reverse: true });
     }
 
     async openAddUserForm() {
@@ -133,7 +133,7 @@ class MainPageAdminTab extends Page {
     async confirmDelete() {        
         await this.UserDeleteModal.confirmDeleteBtn.waitForClickable();
         await this.UserDeleteModal.confirmDeleteBtn.click();
-        await this.userGridData.waitForDisplayed({ timeout: 5000 })
+        await this.userGridData.waitForDisplayed({ timeout: 15000 })
     }
 
     async removeUserGridRow(row) {

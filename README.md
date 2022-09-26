@@ -18,6 +18,9 @@ Test automation is done by [WebdriverIO](https://webdriver.io/)
 ## Environment
 `TEST_ENV=test` - environment for tests execution
 
+## Reporter
+`wdio-html-nice-reporter` is added in addition to `@wdio/spec-reporter` to have report in html-page format. Reports are generated to `reports\html-reports` folder.
+
 ## Test suite running
 1. Start IDE.
 2. Open cloned project working environment.
