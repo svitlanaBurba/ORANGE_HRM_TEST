@@ -16,7 +16,7 @@ const MainPageAdminTabAddUser = require('../pageobjects/MainPageAdminTabAddUser'
 
 
 
-describe('My Login application', () => {
+describe('Login application, create and delete user', () => {
     let userData = {};
 
 
