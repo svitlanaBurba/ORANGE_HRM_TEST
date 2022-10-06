@@ -1,11 +1,11 @@
-class UserStatusTypes {
-    static ENABLED = 'Enabled';
-    static DISABLED = 'Disabled';
-}
+const UserStatusTypes = {
+  ENABLED: 'Enabled',
+  DISABLED: 'Disabled'
+};
 
-class UserRoleTypes {
-    static ADMIN = 'Admin';
-    static ESS = 'ESS';
-}
+const UserRoleTypes = {
+  ADMIN: 'Admin',
+  ESS: 'ESS'
+};
 
-module.exports = { UserStatusTypes, UserRoleTypes };
+module.exports = {UserStatusTypes, UserRoleTypes};
