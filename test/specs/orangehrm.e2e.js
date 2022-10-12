@@ -1,11 +1,7 @@
-// packages
 const expect = require('expect').expect;
-// configs
 const {config} = require('../../wdio.conf');
 const useTypes = require('../constants/userTypes.js');
-// helpers
 const utils = require('../helpers/utils');
-// pageObjects
 const LoginPage = require('../pageobjects/LoginPage');
 const MainPage = require('../pageobjects/MainPage');
 const MainPageAdminTab = require('../pageobjects/MainPageAdminTab');
